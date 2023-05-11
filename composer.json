@@ -21,7 +21,8 @@
     "minimum-stability": "dev",
     "require-dev": {
         "orchestra/testbench": "dev-develop",
-        "nunomaduro/collision": "v7.x-dev"
+        "nunomaduro/collision": "v7.x-dev",
+        "laravel/pint": "dev-main"
     },
     "extra": {
         "laravel": {

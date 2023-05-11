@@ -25,13 +25,13 @@ class CardTest extends TestCase
             'cvc' => '789',
             'exp_month' => '12',
             'exp_year' => '29',
-            'card_holder' => 'Pedro Pérez'
+            'card_holder' => 'Pedro Pérez',
         ];
 
         $client->shouldReceive('withHeaders')->with([
             'Authorization' => 'Bearer public_key',
             'Content-Type' => 'application/json',
-            ])->once()->andReturn($client);
+        ])->once()->andReturn($client);
 
         $client->shouldReceive('post')->with('tokens/cards', $data)->once()->andReturn($response);
 
@@ -49,7 +49,7 @@ class CardTest extends TestCase
                 'card_holder' => 'Pedro Pérez',
                 'created_with_cvc' => true,
                 'expires_at' => '2023-11-06T22:49:46.000Z',
-                'validity_ends_at' => '2023-05-12T22:49:46.580+00:00'
+                'validity_ends_at' => '2023-05-12T22:49:46.580+00:00',
             ],
         ]);
 

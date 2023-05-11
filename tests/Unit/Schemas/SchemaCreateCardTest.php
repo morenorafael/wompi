@@ -16,7 +16,7 @@ class SchemaCreateCardTest extends TestCase
             'cvc' => '789',
             'exp_month' => '12',
             'exp_year' => '29',
-            'card_holder' => 'Pedro Pérez'
+            'card_holder' => 'Pedro Pérez',
         ];
 
         // When

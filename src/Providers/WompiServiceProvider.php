@@ -28,7 +28,6 @@ class WompiServiceProvider extends ServiceProvider
             return new WompiManager($client, $environment);
         });
 
-
         $this->mergeConfigFrom(
             __DIR__.'/../../config/wompi.php', 'wompi'
         );

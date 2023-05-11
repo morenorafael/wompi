@@ -24,7 +24,7 @@ class NequiTest extends TestCase
         $client->shouldReceive('withHeaders')->with([
             'Authorization' => 'Bearer public_key',
             'Content-Type' => 'application/json',
-            ])->once()->andReturn($client);
+        ])->once()->andReturn($client);
 
         $client->shouldReceive('post')->with('tokens/nequi', $data)->once()->andReturn($response);
 
@@ -61,7 +61,7 @@ class NequiTest extends TestCase
         $client->shouldReceive('withHeaders')->with([
             'Authorization' => 'Bearer public_key',
             'Content-Type' => 'application/json',
-            ])->once()->andReturn($client);
+        ])->once()->andReturn($client);
 
         $client->shouldReceive('get')->with('tokens/nequi/nequi_test_123_1234abcABC')
             ->once()->andReturn($response);

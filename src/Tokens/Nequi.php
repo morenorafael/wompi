@@ -11,7 +11,8 @@ class Nequi
     public function __construct(
         protected PendingRequest $client,
         protected array $config,
-    ) {}
+    ) {
+    }
 
     public function create(SchemaCreateNequi $schema): SchemaCreatedNequi
     {

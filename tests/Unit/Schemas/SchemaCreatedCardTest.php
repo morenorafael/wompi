@@ -26,7 +26,7 @@ class SchemaCreatedCardTest extends TestCase
                 'card_holder' => 'Pedro Pérez',
                 'created_with_cvc' => true,
                 'expires_at' => '2023-11-06T22:49:46.000Z',
-                'validity_ends_at' => '2023-05-12T22:49:46.580+00:00'
+                'validity_ends_at' => '2023-05-12T22:49:46.580+00:00',
             ],
         ];
 

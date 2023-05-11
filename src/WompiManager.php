@@ -11,7 +11,8 @@ class WompiManager
     public function __construct(
         protected PendingRequest $client,
         protected array $config,
-    ) {}
+    ) {
+    }
 
     public function generateAcceptanceToken(): self
     {
