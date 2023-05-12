@@ -14,15 +14,13 @@ class WompiServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        $this->app->singleton('morenorafael.wompi', function (Application $app) {
+        $this->app->bind('morenorafael.wompi', function (Application $app) {
             $config = $app['config']['wompi'];
             $default = $config['default'];
             $environment = $config['environments'][$default];
 
             $client = Http::withOptions([
                 'base_uri' => $environment['url'],
-                'timeout' => 10,
-                'connect_timeout' => 2,
             ]);
 
             return new WompiManager($client, $environment);

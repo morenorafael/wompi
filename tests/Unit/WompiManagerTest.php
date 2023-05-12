@@ -18,7 +18,8 @@ class WompiManagerTest extends TestCase
         $response = Mockery::mock(Response::class);
 
         $client->shouldReceive('get')->with('merchants/public_key')->once()->andReturn($response);
-        $response->shouldReceive('json')->once()->andReturn('abc123');
+        $response->shouldReceive('json')
+            ->with('data.presigned_acceptance.acceptance_token')->once()->andReturn('abc123');
 
         $wompiManager = new WompiManager($client, ['keys' => ['public' => 'public_key']]);
 

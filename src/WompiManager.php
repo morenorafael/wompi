@@ -17,7 +17,8 @@ class WompiManager
     public function generateAcceptanceToken(): self
     {
         $response = $this->client->get("merchants/{$this->config['keys']['public']}");
-        $this->acceptanceToken = $response->json('data.presigned_acceptance');
+
+        $this->acceptanceToken = $response->json('data.presigned_acceptance.acceptance_token');
 
         return $this;
     }

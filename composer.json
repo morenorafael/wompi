@@ -22,7 +22,8 @@
     "require-dev": {
         "orchestra/testbench": "dev-develop",
         "nunomaduro/collision": "v7.x-dev",
-        "laravel/pint": "dev-main"
+        "laravel/pint": "dev-main",
+        "guzzlehttp/guzzle": "7.5.x-dev"
     },
     "extra": {
         "laravel": {

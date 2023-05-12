@@ -27,7 +27,7 @@ return [
     'environments' => [
 
         'sandbox' => [
-            'url' => env('WOMPI_URL_SANDBOX', 'https://sandbox.wompi.co/v1'),
+            'url' => env('WOMPI_URL_SANDBOX', 'https://sandbox.wompi.co/v1/'),
             'keys' => [
                 'public' => env('WOMPI_PUBLIC_KEY_SANDBOX'),
                 'private' => env('WOMPI_PRIVATE_KEY_SANDBOX'),
@@ -35,7 +35,7 @@ return [
         ],
 
         'production' => [
-            'url' => env('WOMPI_URL', 'https://production.wompi.co/v1'),
+            'url' => env('WOMPI_URL', 'https://production.wompi.co/v1/'),
             'keys' => [
                 'public' => env('WOMPI_PUBLIC_KEY'),
                 'private' => env('WOMPI_PRIVATE_KEY'),
